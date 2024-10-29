@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="欢迎访问2048核基地地址发布页，发布和展示核基地地址，获取更多信息！">
+    <title>2048核基地地址发布页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .contact {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .fun-section {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2048核基地地址发布页</h1>
+        <input type="text" id="addressInput" placeholder="去浏览器输入bumilu66.top 有你想要的" />
+        <button id="generateButton">发布地址</button>
+        <div class="result" id="result" style="display: none;"></div>
+
+        <div class="contact">
+            <h2>联系方式</h2>
+            <p>如需帮助，请联系邮箱: <a href="doufuru666@gmail.com">doufuru666@gmail.com</a></p>
+        </div>
+
+        <div class="fun-section">
+            <h2>有趣板块</h2>
+            <p>你知道吗？2048游戏的设计灵感来源于数字拼图游戏，玩家需要合并相同数字的方块，目标是达到2048！</p>
+            <p>分享你最喜欢的游戏策略，或者在评论区讨论你的最佳得分！</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('generateButton').onclick = function() {
+            var addressInput = document.getElementById('addressInput').value;
+            if (addressInput) {
+                var resultDiv = document.getElementById('result');
+                resultDiv.style.display = 'block';
+                resultDiv.innerHTML = "发布的地址: <a href='" + addressInput + "' target='_blank'>" + addressInput + "</a>";
+            } else {
+                alert("请输入一个地址！");
+            }
+        };
+    </script>
+</body>
+</html>
